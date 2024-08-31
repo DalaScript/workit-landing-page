@@ -1,0 +1,725 @@
+/* fonts
+ ******************************/
+@font-face {
+  font-family: "Fraunces 144pt";
+  src: url(../fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Fraunces 9pt";
+  src: url(../fonts/./fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf);
+}
+@font-face {
+  font-family: "Manrope regular";
+  src: url(../fonts/manrope/static/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+/* Colors
+ ******************************/
+/* Primary
+ ***************/
+/* Global Variables
+ ******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #FFFFFF;
+}
+html picture,
+body picture {
+  display: flex;
+}
+html a,
+body a {
+  text-decoration: none;
+}
+
+/* Body Variables
+ ******************************/
+.header {
+  padding: 32px 16px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+.header__link {
+  display: flex;
+}
+.header__btn {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.16px;
+  border: none;
+  border-bottom: 3px solid #44FFA1;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding-bottom: 2px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .pattern-bg {
+  display: none;
+}
+
+.home {
+  width: 100%;
+  height: 481.71px;
+  position: relative;
+  z-index: 2;
+  background-color: #24053E;
+}
+.home::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: calc(17.71px*3/2);
+  background-color: #FCF8FF;
+  z-index: -1;
+}
+.home::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  clip-path: ellipse(55% 50% at 50% 50%);
+  height: calc(17.71px*3);
+  background-color: #24053E;
+  z-index: -1;
+}
+.home__inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.home__text-content {
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.home__title {
+  font-family: "Fraunces 144pt";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+  /* Heading S */
+  font-size: 50px;
+  line-height: 50px;
+}
+.home__title span {
+  position: relative;
+  font-size: 50px;
+  line-height: 50px;
+}
+.home__title span::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #44FFA1;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+.home__btn {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.16px;
+  border: 2px solid #44FFA1;
+  background-color: #44FFA1;
+  color: #24053E;
+  padding: 9px 22px 10px 21px;
+}
+.home__img {
+  margin: 0 19px 0 36px;
+}
+
+.features {
+  margin-top: -89.71px;
+  padding-top: 245px;
+  height: 1070.71px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  background-color: #FCF8FF;
+}
+.features::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: calc(17.71px*3/2);
+  background-color: #FFFFFF;
+}
+.features::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  clip-path: ellipse(55% 50% at 50% 50%);
+  height: calc(17.71px*3);
+  background-color: #FCF8FF;
+}
+.features__feature {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.features__feature > * {
+  z-index: 1;
+}
+.features__number {
+  padding: 5px 16px;
+  width: 48px;
+  height: 46px;
+  border: 1px solid #584D62;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces 144pt";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  color: #24053E;
+}
+.features__text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.features__title {
+  font-family: "Fraunces 144pt";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #24053E;
+  /* Heading S */
+  font-size: 28px;
+  line-height: 36px;
+}
+.features__subtitle {
+  font-family: "Manrope regular";
+  font-style: normal;
+  font-weight: 400;
+  color: #584D62;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  max-inline-size: 343px;
+}
+
+.test__content {
+  margin: 100.29px 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.test__text-content {
+  margin-top: -53px;
+  padding: 32px 31px;
+  width: 343px;
+  background-color: #24053E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.test__title {
+  font-family: "Fraunces 144pt";
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+  /* Heading S */
+  font-size: 32px;
+  line-height: 48px;
+}
+.test__caption {
+  font-family: "Manrope regular";
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin: 16px 0 24px;
+}
+.test__btn {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.16px;
+  border: 2px solid #44FFA1;
+  background-color: #44FFA1;
+  color: #24053E;
+  padding: 9px 21.5px 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-links {
+  margin: 74px 0 63.78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57.62px;
+}
+.page-links__links-container {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.page-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-links__link svg path {
+  fill: #584D62;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 32px 40px 0 39px;
+  }
+
+  main .pattern-bg {
+    display: inline-block;
+    position: absolute;
+    transition: all 0.5s ease-out;
+  }
+  main .pattern-bg--left {
+    top: 71.12px;
+    left: -227.27px;
+  }
+  main .pattern-bg--right {
+    top: 250px;
+    right: -93.68px;
+  }
+  main .pattern-bg--test {
+    right: 12.69px;
+    bottom: -105.74px;
+  }
+
+  .home {
+    height: 540.24px;
+  }
+  .home::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: calc(36.24px*3/2);
+    background-color: #FCF8FF;
+    z-index: -1;
+  }
+  .home::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: ellipse(55% 50% at 50% 50%);
+    height: calc(36.24px*3);
+    background-color: #24053E;
+    z-index: -1;
+  }
+  .home__inner-content {
+    margin: 0;
+    gap: 55px;
+    overflow: hidden;
+    position: relative;
+  }
+  .home__text-cotent {
+    margin-top: 122px;
+    gap: 39px;
+  }
+  .home__title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    /* Heading M */
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .home__title span {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .features {
+    margin-top: -137.24px;
+    padding-top: 341px;
+    height: 920.73px;
+    gap: 48px;
+  }
+  .features::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: calc(36.24px*3/2);
+    background-color: #FFFFFF;
+  }
+  .features::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: ellipse(55% 50% at 50% 50%);
+    height: calc(36.24px*3);
+    background-color: #FCF8FF;
+  }
+  .features__feature {
+    margin: 0;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .features__text-content {
+    align-items: flex-start;
+  }
+  .features__subtitle {
+    font-family: "Manrope regular";
+    font-style: normal;
+    font-weight: 400;
+    color: #584D62;
+    text-align: left;
+    max-inline-size: 493px;
+  }
+
+  .test {
+    display: flex;
+    justify-content: center;
+  }
+  .test__content {
+    margin: 100.27px 0 0;
+    width: 689px;
+    align-items: flex-start;
+  }
+  .test__text-content {
+    margin-top: -130px;
+    padding: 48px 56px 56px;
+    width: 514px;
+    align-self: flex-end;
+    align-items: flex-start;
+    position: relative;
+  }
+  .test__title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    /* Heading M */
+    text-align: left;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .test__caption {
+    font-family: "Manrope regular";
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 24px 0;
+  }
+
+  .page-links {
+    margin: 80px 0 121.78px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding: 56px 165px 0 165.35px;
+  }
+  .header__btn {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.16px;
+    border: none;
+    border-bottom: 3px solid #44FFA1;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    padding-bottom: 0px;
+  }
+
+  main .pattern-bg--left {
+    top: 116.12px;
+    left: -138.27px;
+  }
+  main .pattern-bg--right {
+    top: 314.07px;
+    right: -48.08px;
+  }
+  main .pattern-bg--test {
+    right: 72.69px;
+    bottom: -61.74px;
+  }
+
+  .home {
+    height: 730px;
+  }
+  .home::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: calc(68px*3/2);
+    background-color: #FCF8FF;
+    z-index: -1;
+  }
+  .home::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: ellipse(55% 50% at 50% 50%);
+    height: calc(68px*3);
+    background-color: #24053E;
+    z-index: -1;
+  }
+  .home__inner-content {
+    gap: 50px;
+  }
+  .home__text-content {
+    margin-top: 146px;
+  }
+  .home__title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    /* Heading L */
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .home__title span {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .home__btn {
+    height: 61px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.16px;
+    border: 2px solid #44FFA1;
+    background-color: #44FFA1;
+    color: #24053E;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    padding: 11px 29.5px 14px 30.5px;
+  }
+
+  .features {
+    margin-top: -226px;
+    padding-top: 481px;
+    height: 960px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 26px;
+  }
+  .features::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: calc(68px*3/2);
+    background-color: #FFFFFF;
+  }
+  .features::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    clip-path: ellipse(55% 50% at 50% 50%);
+    height: calc(68px*3);
+    background-color: #FCF8FF;
+  }
+  .features__feature {
+    flex-direction: column;
+    gap: 56px;
+  }
+  .features__number {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .features__text-content {
+    align-items: center;
+    gap: 28px;
+  }
+  .features__title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #24053E;
+    /* Heading M */
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .features__subtitle {
+    font-family: "Manrope regular";
+    font-style: normal;
+    font-weight: 400;
+    color: #584D62;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    max-inline-size: 354px;
+  }
+
+  .test__content {
+    margin-top: 110px;
+    width: 1112px;
+    height: 647.74px;
+  }
+  .test__text-content {
+    margin: -304px 0 0;
+    padding: 64px;
+    width: 730px;
+    height: 413px;
+  }
+  .test__title {
+    font-family: "Fraunces 144pt";
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    color: #FFFFFF;
+    /* Heading L */
+    text-align: left;
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .test__caption {
+    font-family: "Manrope regular";
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 32px 0;
+  }
+  .test__btn {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.16px;
+    border: 2px solid #44FFA1;
+    background-color: #44FFA1;
+    color: #24053E;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    padding: 11px 22.5px 14px 23.5px;
+  }
+
+  .page-links {
+    margin: 60.03px 0 110px;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  button {
+    cursor: pointer;
+  }
+
+  .header__btn {
+    transition: color 0.5s ease-out;
+  }
+  .header__btn:hover {
+    color: #44FFA1;
+  }
+
+  .home__btn {
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  .home__btn:hover {
+    background-color: #24053E;
+    color: #44FFA1;
+  }
+
+  .test__btn {
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  .test__btn:hover {
+    background-color: #24053E;
+    color: #44FFA1;
+  }
+
+  .page-links__link svg path {
+    transition: all 0.5s ease-out;
+  }
+  .page-links__link:hover svg path {
+    fill: #24053E;
+  }
+}
