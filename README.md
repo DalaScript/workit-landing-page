@@ -16,7 +16,6 @@ This is a solution to the [Workit landing page challenge on Frontend Mentor](htt
 - [Author](#author)
   - [Connect with Me](#Connect-with-Me)
   - [Coding Profiles](#Coding-Profiles)
-  - [Professional Links](#Professional-Links)
 
 ## Overview
 
@@ -34,7 +33,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/DalaScript/workit-landing-page)
-- [Live Site URL](https://dalascript.github.io/workit-landing-page/)
+- [Live Site URL](https://DalaScript.github.io/workit-landing-page/)
 
 ## My process
 
